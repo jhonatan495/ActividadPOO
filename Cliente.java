@@ -1,47 +1,33 @@
-
-package com.mycompany.sistemarestaruante;
-
-
+package com.mycompany.sistemarestaruante2;
 
 public class Cliente {
-  
-   private String ID;
-   private String NIT;
-   private String TipoDeDocumento;
-   private String NombreCompleto;
-   private String NombreDeEmpresa;
 
-    public  Cliente(String ID, String NIT, String TipoDeDocumento, String NombreCompleto, String NombreDeEmpresa) {
-        this.ID = ID;
-        this.NIT = NIT;
-        this.TipoDeDocumento = TipoDeDocumento;
+    private String tipoDeDocumento;
+    private String NumeroDeDocumento;
+    private String NombreCompleto;
+    private String NombreDeEmpresa;
+
+    public Cliente(String tipoDeDocumento, String NumeroDeDocumento, String NombreCompleto, String NombreDeEmpresa) {
+        this.tipoDeDocumento = tipoDeDocumento;
+        this.NumeroDeDocumento = NumeroDeDocumento;
         this.NombreCompleto = NombreCompleto;
         this.NombreDeEmpresa = NombreDeEmpresa;
-       
-    }
-
-    public String getID() {
-        return ID;
-    }
-
-    public void setID(String ID) {
-        this.ID = ID;
-    }
-
-    public String getNIT() {
-        return NIT;
-    }
-
-    public void setNIT(String NIT) {
-        this.NIT = NIT;
     }
 
     public String getTipoDeDocumento() {
-        return TipoDeDocumento;
+        return tipoDeDocumento;
     }
 
-    public void setTipoDeDocumento(String TipoDeDocumento) {
-        this.TipoDeDocumento = TipoDeDocumento;
+    public void setTipoDeDocumento(String tipoDeDocumento) {
+        this.tipoDeDocumento = tipoDeDocumento;
+    }
+
+    public String getNumeroDeDocumento() {
+        return NumeroDeDocumento;
+    }
+
+    public void setNumeroDeDocumento(String NumeroDeDocumento) {
+        this.NumeroDeDocumento = NumeroDeDocumento;
     }
 
     public String getNombreCompleto() {
@@ -60,5 +46,4 @@ public class Cliente {
         this.NombreDeEmpresa = NombreDeEmpresa;
     }
     
-   
 }
